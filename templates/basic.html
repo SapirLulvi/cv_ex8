@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <script src="{{ url_for('static', filename='js/cv.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cv.css') }}">
+</head>
+<body>
+{% include 'header.html' %}
+{% block details %}{% endblock %}
+</body>
+</html>
